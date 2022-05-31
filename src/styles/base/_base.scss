@@ -1,0 +1,30 @@
+html, body {
+  font-family: Arial, Helvetica, sans-serif;
+  block-size: 100vh;
+  inline-size: 100vw;
+  margin: 0;
+}
+
+main {
+  inline-size: 100%;
+}
+
+.mt-1 {
+  margin-inline-start: 0.5rem;
+}
+
+.mt-5 {
+  margin-inline-start: 1.5rem;
+}
+
+.mb-1 {
+  margin-inline-end: 0.5rem;
+}
+
+.mb-5 {
+  margin-inline-end: 1.5rem;
+}
+
+.pointer {
+  cursor: pointer;
+}

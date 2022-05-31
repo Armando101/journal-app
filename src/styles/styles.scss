@@ -1,4 +1,4 @@
-html, body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: papayawhip;
-}
+@import "./base/settings";
+@import "./base/base";
+@import "./components/auth";
+@import "./components/buttons";
