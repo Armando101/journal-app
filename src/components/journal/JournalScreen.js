@@ -3,7 +3,7 @@ import { Sidebar } from "./Sidebar";
 
 export const JournalScreen = () => {
   return (
-    <div className="jorunal__main-content">
+    <div className="journal__main-content">
       <Sidebar />
 
       <main>

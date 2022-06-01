@@ -1,34 +1,89 @@
+p,
+h4,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
 .journal {
   &__main-content {
     display: flex;
   }
+
   &__sidebar {
     background-color: $dark-gray;
     color: white;
+    display: flex;
     flex-direction: column;
-    block-size: 100%;
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
-    inline-size: 28rem;
+    block-size: 100vh;
+    padding-inline-start: 0.75rem;
+    padding-inline-end: 0.75rem;
+    inline-size: 50rem;
     &-navbar {
       display: flex;
       justify-content: space-between;
-      & h3 {
-        font-weight: lighter;
-      }
+    }
+    &-navbar h3 {
+      font-weight: lighter;
     }
   }
   &__new-entry {
-    display: flex;
-    justify-content: center;
     align-items: center;
+    cursor: pointer;
+    display: flex;
     flex-direction: column;
+    justify-content: center;
     margin-block-start: 1.75rem;
     inline-size: 100%;
-    cursor: pointer;
+
     transition: color 0.3s ease;
+
     &:hover {
       color: darken($color: white, $amount: 20);
+    }
+  }
+
+  &__entries {
+    flex: 1 1 auto;
+    margin-block-start: 1.75rem;
+    overflow-y: scroll;
+  }
+
+  &__entry {
+    background-color: white;
+    border-radius: 0.25rem;
+    color: $dark-gray;
+    display: flex;
+    margin-bottom: 0.75rem;
+    overflow: hidden;
+
+    &-picture {
+      block-size: 4.5rem;
+      inline-size: 4.5rem;
+    }
+
+    &-body {
+      padding: 0.75rem;
+    }
+
+    &-title {
+      font-size: 1rem;
+      font-weight: bold;
+    }
+
+    &-content {
+      font-size: 0.75rem;
+    }
+
+    &-date-box {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 5px;
+      & span {
+        font-size: 0.75rem;
+      }
     }
   }
 }
