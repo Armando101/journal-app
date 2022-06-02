@@ -12,4 +12,35 @@
     padding: 0.75rem 1.25rem;
     background-color: $primary;
   }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    block-size: 100%;
+    padding: 1.5rem;
+  }
+  &__title-input,
+  &__textarea {
+    border: none;
+    &:focus {
+      outline: none;
+    }
+  }
+  &__title-input {
+    color: $dark-gray;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-block-end: 0.75rem;
+  }
+  &__textarea {
+    color: $dark-gray;
+    font-size: 1.75rem;
+    resize: none;
+    flex: 1;
+  }
+  &__image img {
+    inline-size: 100%;
+    box-shadow: 3px 3px 6px $dark-gray;
+    block-size: 9rem;
+    object-fit: cover;
+  }
 }
