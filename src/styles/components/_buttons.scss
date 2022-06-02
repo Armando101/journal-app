@@ -5,8 +5,12 @@
   cursor: pointer;
   font-size: 1rem;
   padding: 0.5rem 0.75rem;
+  transition: color 0.3 ease;
   &:focus {
     outline: none;
+  }
+  &:hover {
+    color: darken($color: white, $amount: 10);
   }
   &-primary {
     background-color: $primary;

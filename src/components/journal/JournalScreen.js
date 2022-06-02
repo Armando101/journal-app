@@ -1,13 +1,14 @@
 import React from "react";
+import { NoteScreen } from "../notes/NoteScreen";
 import { Sidebar } from "./Sidebar";
 
 export const JournalScreen = () => {
   return (
-    <div className="jorunal__main-content">
+    <div className="journal__main-content">
       <Sidebar />
 
       <main>
-        <h1>Main content</h1>
+        <NoteScreen />
       </main>
     </div>
   );
